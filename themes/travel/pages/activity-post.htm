@@ -1,0 +1,51 @@
+title = "Activity post"
+url = "/activities/activity/:slug"
+layout = "default"
+is_hidden = 0
+
+[builderDetails]
+modelClass = "Maksim1990\Activities\Models\Activity"
+identifierValue = "{{ :slug }}"
+modelKeyColumn = "slug"
+displayColumn = "name"
+notFoundMessage = "Record not found"
+==
+{% set record = builderDetails.record %}
+{% set displayColumn = builderDetails.displayColumn %}
+{% set notFoundMessage = builderDetails.notFoundMessage %}
+
+{% if record %}
+    <h1>{{ record.name }}</h1>
+
+    <p>
+        <img src="{{record.poster.thumb(200,auto)}}" alt="">
+    </p>
+   <p> {{record.description|raw}}</p>
+<div>
+    <h3>Gallery</h3>
+    <p>
+        {% for image in record.activity_gallery %}
+        <img src="{{image.thumb(80,80,{'mode':'crop'})}}" alt="">
+        {% endfor %}
+    </p>
+</div>
+<div>
+    <h3>Types</h3>
+    <p>
+        {% for type in record.types %}
+        <a href="/types/{{type.slug}}">
+        {{type.name}}</a><br>
+        {% endfor %}
+    </p>
+</div>
+<div>
+    <h3>Tags</h3>
+    <p>
+        {% for tag in record.tags %}
+            {{tag.tag_name}}<br>
+        {% endfor %}
+    </p>
+</div>
+{% else %}
+    {{ notFoundMessage }}
+{% endif %}

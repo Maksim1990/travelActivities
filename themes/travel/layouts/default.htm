@@ -1,0 +1,41 @@
+description = "Default layout"
+
+[session]
+security = "all"
+==
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>October CMS - {{ this.page.title }}</title>
+    <meta name="description" content="{{ this.page.meta_description }}">
+    <meta name="title" content="{{ this.page.meta_title }}">
+    <meta name="author" content="OctoberCMS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="OctoberCMS">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}">
+    <link href="{{ 'assets/compiled/css/style.css'|theme }}" rel="stylesheet">
+    {% styles %}
+</head>
+<body>
+
+{% partial "header" %}
+
+
+<!-- Content -->
+<section id="content">
+    {% page %}
+</section>
+
+{% partial "footer" %}
+
+<!-- Scripts -->
+<script src="{{ 'assets/js/compiled/all.js'|theme }}"></script>
+{% framework extras %}
+{% scripts %}
+
+</body>
+</html>

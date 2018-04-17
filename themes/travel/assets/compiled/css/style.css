@@ -1,0 +1,38 @@
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+  background: lightblue;
+}
+
+.navbar-nav {
+  display: inline;
+}
+
+.navbar-nav li {
+  display: inline;
+}
+
+.navbar-nav li a {
+  color: white;
+}
+
+#footer {
+  background-color: black;
+  color: white;
+  min-height: 150px;
+  position: absolute;
+}
+
+#content {
+  height: 1000px;
+}
+
+.contact_form {
+  color: dimgray;
+}
+
+.contact_form input {
+  display: block;
+}
+
+/*# sourceMappingURL=style.css.map */

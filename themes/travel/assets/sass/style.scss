@@ -1,0 +1,35 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  background: lightblue;
+}
+
+.navbar-nav {
+  display: inline;
+  li{
+    display: inline;
+    a{
+      color: white;
+    }
+  }
+}
+
+#footer{
+  background-color: black;
+  color: white;
+  min-height: 150px;
+  position: absolute;
+}
+#content{
+  height: 1000px;
+}
+
+.contact_form{
+  color: dimgray;
+  input {
+    display: block;
+  }
+}

@@ -1,0 +1,10 @@
+name: Hotels
+form: $/maksim1990/activities/models/hotel/fields.yaml
+modelClass: Maksim1990\Activities\Models\Hotel
+defaultRedirect: maksim1990/activities/hotels
+create:
+    redirect: 'maksim1990/activities/hotels/update/:id'
+    redirectClose: maksim1990/activities/hotels
+update:
+    redirect: maksim1990/activities/hotels
+    redirectClose: maksim1990/activities/hotels

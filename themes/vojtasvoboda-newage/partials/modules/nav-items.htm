@@ -1,0 +1,22 @@
+==
+{% if this.theme.download_enabled %}
+<li class="nav-item">
+    <a class="nav-link js-scroll-trigger" href="#download">
+        Download
+    </a>
+</li>
+{% endif %}
+{% if this.theme.features_enabled %}
+<li class="nav-item">
+    <a class="nav-link js-scroll-trigger" href="#features">
+        About
+    </a>
+</li>
+{% endif %}
+{% if this.theme.contact_enabled %}
+<li class="nav-item">
+    <a class="nav-link js-scroll-trigger" href="#contact">
+        Help
+    </a>
+</li>
+{% endif %}

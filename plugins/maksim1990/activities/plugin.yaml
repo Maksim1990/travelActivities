@@ -1,0 +1,20 @@
+plugin:
+    name: 'maksim1990.activities::lang.plugin.name'
+    description: 'maksim1990.activities::lang.plugin.description'
+    author: maksim1990
+    icon: oc-icon-car
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Activities
+        url: maksim1990/activities/activities
+        icon: icon-globe
+        sideMenu:
+            side-menu-item:
+                label: Types
+                url: maksim1990/activities/types
+                icon: icon-tag
+            side-menu-item2:
+                label: Hotels
+                url: maksim1990/activities/hotels
+                icon: icon-hotel

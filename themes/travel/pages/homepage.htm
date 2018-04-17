@@ -1,0 +1,22 @@
+title = "Homepage"
+url = "/"
+layout = "default"
+is_hidden = 0
+
+[hotels]
+results = 3
+sortOrder = "name desc"
+
+[siteSearchInclude]
+==
+<div class="col-sm12 col-xs-12">
+    <form action="{{ 'search' | page }}" method="get">
+        <input name="q" type="text" placeholder="What are you looking for?" autocomplete="off">
+        <button type="submit">Search</button>
+    </form>
+
+
+    <h1>This is Travel page</h1>
+</div>
+
+{% component 'hotels' %}

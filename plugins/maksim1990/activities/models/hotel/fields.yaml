@@ -1,0 +1,36 @@
+fields:
+    name:
+        label: Name
+        span: auto
+        type: text
+    description:
+        label: Description
+        span: full
+        size: ''
+        type: richeditor
+    country:
+        label: Country
+        span: left
+        type: text
+    city:
+        label: City
+        span: left
+        type: text
+    slug:
+        label: Slug
+        span: right
+        preset:
+            field: name
+            type: slug
+        type: text
+    hotelImage:
+        label: 'Hotel Image'
+        span: auto
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        imageWidth: '100'
+        imageHeight: '100'
+        type: fileupload

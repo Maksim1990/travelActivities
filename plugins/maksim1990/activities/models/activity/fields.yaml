@@ -1,0 +1,60 @@
+fields:
+    name:
+        label: 'Activity title'
+        span: full
+        type: text
+    description:
+        label: Description
+        span: full
+        size: ''
+        type: richeditor
+    slug:
+        label: Slug
+        span: auto
+        preset:
+            field: name
+            type: slug
+        type: text
+    types:
+        label: Types
+        nameFrom: name
+        descriptionFrom: description
+        span: right
+        type: relation
+    tags:
+        label: Tags
+        prompt: 'Add new item'
+        span: full
+        type: repeater
+        form:
+            fields:
+                tag_name:
+                    label: 'Tag name'
+                    span: auto
+                    type: text
+    poster:
+        label: 'Activity image'
+        mode: image
+        imageWidth: '100'
+        imageHeight: '100'
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
+    activity_gallery:
+        label: Gallery
+        span: auto
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        imageWidth: '80'
+        imageHeight: '80'
+        type: fileupload
+    hotels:
+        label: Hotels
+        span: left
+        type: hotelbox

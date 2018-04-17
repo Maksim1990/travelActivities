@@ -1,0 +1,10 @@
+name: Activities
+form: $/maksim1990/activities/models/activity/fields.yaml
+modelClass: Maksim1990\Activities\Models\Activity
+defaultRedirect: maksim1990/activities/activities
+create:
+    redirect: 'maksim1990/activities/activities/update/:id'
+    redirectClose: maksim1990/activities/activities
+update:
+    redirect: maksim1990/activities/activities
+    redirectClose: maksim1990/activities/activities

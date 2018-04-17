@@ -1,0 +1,13 @@
+title = "Add hotels"
+url = "/add-hotels"
+layout = "default"
+is_hidden = 0
+
+[hotelsform]
+
+[session]
+security = "user"
+redirect = "login"
+==
+<h1>Add new hotel</h1>
+{% component 'hotelsform' %}

@@ -1,0 +1,67 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 w3-center">
+
+
+            <form class="contact_form" name="contact-form" data-request="ContactForm::onSend"
+            data-request-validate data-request-false>
+
+                <p><label>Your name</label>
+                    <input class="w3-input" type="text" name="name">
+                    <span data-validate-for="name"></span>
+                </p>
+
+                <p><label>Your email</label>
+                    <input class="w3-input" type="email" name="email">
+                    <span data-validate-for="email"></span>
+                </p>
+
+                <p>
+                    <label>Your message</label>
+                    <textarea name="content" class="w3-input"></textarea>
+                </p>
+                <button type="submit" class="btn btn-success">Send</button>
+
+            </form>
+            <div id="result"></div>
+        </div>
+    </div>
+</div>
+
+
+{#OLD VERSION#}
+{#<div class="container">#}
+    {#<div class="row">#}
+        {#<div class="col-sm-8 col-sm-offset-2 w3-center">#}
+
+
+            {#<form class="contact_form" name="contact-form" data-request="ContactForm::onSend" >#}
+
+                {#<p><label>Your name</label>#}
+                    {#<input class="w3-input" type="text" name="name">#}
+                    {#{{ errors.first('name') }}#}
+                    {#</p>#}
+
+                {#<p><label>Your email</label>#}
+                    {#<input class="w3-input" type="email" name="email">#}
+                    {#{{ errors.first('email') }}#}
+                    {#</p>#}
+
+                {#<p>#}
+                    {#<label>Your message</label>#}
+                    {#<textarea name="content" class="w3-input"></textarea>#}
+                {#</p>#}
+                {#<button type="submit" class="btn btn-success">Send</button>#}
+
+                {#<ul>#}
+                    {#{% for error in errors.all() %}#}
+                        {#<li>{{ error }}</li>#}
+                    {#{%  endfor %}#}
+                {#</ul>#}
+
+            {#</form>#}
+            {#<div id="result"></div>#}
+        {#</div>#}
+    {#</div>#}
+{#</div>#}

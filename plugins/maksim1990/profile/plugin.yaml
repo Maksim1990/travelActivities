@@ -1,0 +1,6 @@
+plugin:
+    name: 'maksim1990.profile::lang.plugin.name'
+    description: 'maksim1990.profile::lang.plugin.description'
+    author: maksim1990
+    icon: oc-icon-user
+    homepage: ''

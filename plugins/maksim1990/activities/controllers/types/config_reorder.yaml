@@ -1,0 +1,4 @@
+title: Types
+modelClass: Maksim1990\Activities\Models\Type
+toolbar:
+    buttons: reorder_toolbar

@@ -1,0 +1,27 @@
+title = "Types"
+url = "/types/:slug"
+layout = "default"
+is_hidden = 0
+
+[builderDetails]
+modelClass = "Maksim1990\Activities\Models\Type"
+identifierValue = "{{ :slug }}"
+modelKeyColumn = "slug"
+displayColumn = "name"
+notFoundMessage = "Record not found"
+==
+{% set record = builderDetails.record %}
+{% set displayColumn = builderDetails.displayColumn %}
+{% set notFoundMessage = builderDetails.notFoundMessage %}
+
+{% if record %}
+<h1>{{record.name}}</h1>
+<p>
+        {% for activity in record.activities %}
+    <a href="/activities/activity/{{activity.slug}}">
+             {{activity.name}}</a><br>
+        {% endfor %}
+</p>
+{% else %}
+{{ notFoundMessage }}
+{% endif %}

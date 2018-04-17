@@ -1,0 +1,35 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table maksim1990_activities_'
+    - builder_table_create_maksim1990_activities_.php
+1.0.3:
+    - 'Updated table maksim1990_activities_'
+    - builder_table_update_maksim1990_activities_.php
+1.0.4:
+    - 'Updated table maksim1990_activities_'
+    - builder_table_update_maksim1990_activities_.php
+1.0.5:
+    - 'Updated table maksim1990_activities_'
+    - builder_table_update_maksim1990_activities__2.php
+1.0.6:
+    - 'Updated table maksim1990_activities_'
+    - builder_table_update_maksim1990_activities__3.php
+1.0.7:
+    - 'Created table maksim1990_activities_types'
+    - builder_table_create_maksim1990_activities_types.php
+1.0.8:
+    - 'Updated table maksim1990_activities_'
+    - builder_table_update_maksim1990_activities__4.php
+1.0.9:
+    - 'Created table maksim1990_activities_hotels'
+    - builder_table_create_maksim1990_activities_hotels.php
+1.0.10:
+    - 'Updated table maksim1990_activities_hotels'
+    - builder_table_update_maksim1990_activities_hotels.php
+1.0.11:
+    - 'Updated table maksim1990_activities_hotels'
+    - builder_table_update_maksim1990_activities_hotels_2.php
+1.0.12:
+    - 'Seed activities'
+    - seed.php

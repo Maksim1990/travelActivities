@@ -1,0 +1,10 @@
+name: Types
+form: $/maksim1990/activities/models/type/fields.yaml
+modelClass: Maksim1990\Activities\Models\Type
+defaultRedirect: maksim1990/activities/types
+create:
+    redirect: 'maksim1990/activities/types/update/:id'
+    redirectClose: maksim1990/activities/types
+update:
+    redirect: maksim1990/activities/types
+    redirectClose: maksim1990/activities/types

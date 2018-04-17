@@ -1,0 +1,4 @@
+title: Hotels
+modelClass: Maksim1990\Activities\Models\Hotel
+toolbar:
+    buttons: reorder_toolbar

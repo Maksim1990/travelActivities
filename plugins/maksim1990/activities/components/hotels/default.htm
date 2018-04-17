@@ -1,0 +1,7 @@
+{% set hotels =__SELF__.hotels %}
+
+<ul>
+    {% for hotel in hotels %}
+        <li>{{ hotel.name }}</li>
+    {%  endfor %}
+</ul>

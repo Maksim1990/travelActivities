@@ -1,0 +1,6 @@
+plugin:
+    name: 'maksim1990.contact::lang.plugin.name'
+    description: 'maksim1990.contact::lang.plugin.description'
+    author: maksim1990
+    icon: oc-icon-adjust
+    homepage: ''
